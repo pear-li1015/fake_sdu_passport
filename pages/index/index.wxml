@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="">
+
+<!-- 
+    默认(获取定位权限->检查用户人脸信息)
+    预约(打开地图->选柜子->选格子->付钱->生成开柜码)
+    个人中心(人脸注册(要求用户上传一张照片->linux特征提取并返回结果)，未完成(开门，开门记录，结束使用)，已完成(开门记录),会员信息(使用情况))
+    其他(操作教程，联系我们，优惠办理)
+  -->
+    <image class="background_image" src="http://www.binhub.top:8080/image?name=school_gate_index.jpg" bindtap="openPassPort"></image>
+  <view class="userinfo" wx:if="{{hasUserInfo}}">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+    <image class="success_image" wx:if="{{imageDisplay}}" src="http://www.binhub.top:8080/image?name=school_gate_success.jpg"></image>
+  <!-- <view style="margin-top: 30rpx;" bindtap="openPassPort" >打开通行证</view> -->
+</view>
+ 

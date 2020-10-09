@@ -1,0 +1,109 @@
+/**index.wxss**/
+.school_container { 
+}
+.green_view_container {
+  display: flex;
+ border: 5rpx solid #78b771;
+ border-radius: 20rpx;
+ width: 91%;
+ margin-left: 4%;
+ height: 980rpx;
+ background-color: #f2f7f1;
+}
+
+.top_no_problem {
+  
+  margin: 20rpx 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+}
+
+.green_back_ground {
+  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 520rpx;
+  border-radius: 16rpx;
+  
+}
+
+.my_image {
+  
+  position: absolute;
+  top: 162rpx;
+  left: 80rpx;
+  width: 250rpx;
+  height: 348rpx;
+
+}
+.my_info {
+  
+  position: absolute;
+  top: 225rpx;
+  left: 360rpx;
+  
+
+}
+.my_info_name {
+  
+  font-size: 45rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.my_info_font {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 36rpx;
+  color: #f7f0f8;
+}
+.my_info_font_hide {
+
+  letter-spacing: -1rpx;
+}
+
+.white_back_image {
+  
+  position: absolute;
+  top: 642rpx;
+  left: 36rpx;
+  width: 682rpx;
+  height: 460rpx;
+  border-radius: 20rpx;
+}
+
+.bg {
+  width: 100%;
+}
+.bg-wrapper {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* image {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 350rpx;
+} */
+
+.time {
+  font-size: 28rpx;
+  position: absolute;
+  top: 998rpx;
+  left: 215rpx;
+  color: #646464;
+}
+.bottom_button {
+  
+  margin: 0;
+  margin-top: 170rpx;
+  margin-bottom: 20rpx;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 110rpx;
+}

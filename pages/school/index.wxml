@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="school_container">
+<!-- ---------------------- 顶部无异常 ---------------------- -->
+
+  <image class="top_no_problem" src="http://www.binhub.top:8080/image?name=school_gate_01.jpg"
+  ></image>
+<!-- ---------------------- 绿边框view ---------------------- -->
+  <view class="green_view_container">
+<!-- 上方绿色图片 -->
+    <image class="green_back_ground" src="http://www.binhub.top:8080/image?name=school_gate_02.jpg"
+        ></image>
+<!-- 个人照片 -->
+    <!-- <image src="http://www.binhub.top:8080/image?name=my_image.jpg"
+    class="my_image"
+    ></image> -->
+    
+    <image src="{{image}}"
+    class="my_image"
+    ></image>
+<!-- 个人基本信息 -->
+    <view class="my_info my_info_font">
+      <!-- <view class="my_info_name">李彬</view> -->
+      <view class="my_info_name">{{userName}}</view>
+      <!-- <view>201845003</view> -->
+      <view class="my_info_font_hide">{{userSchoolCode}}</view>
+    </view>
+  </view>
+
+<!-- 下方图片 -->
+
+    <image src="http://www.binhub.top:8080/image?name=school_gate_03.jpg"
+    class="white_back_image"
+    ></image>
+<!-- 核验地点 -->
+<!-- 生成时间 -->
+  <view class="time">
+    {{time}}
+  </view>
+<!-- ---------------------- 底部按钮 ---------------------- -->
+
+    <image src="http://www.binhub.top:8080/image?name=school_gate_04.jpg"
+    class="bottom_button" bindtap="returnMain"
+    ></image>
+</view>
