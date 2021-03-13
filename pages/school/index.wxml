@@ -2,12 +2,12 @@
 <view class="school_container">
 <!-- ---------------------- 顶部无异常 ---------------------- -->
 
-  <image class="top_no_problem" src="http://www.binhub.top:8080/image?name=school_gate_01.jpg"
+  <image class="top_no_problem" src="/img/school_gate_01.jpg"
   ></image>
 <!-- ---------------------- 绿边框view ---------------------- -->
   <view class="green_view_container">
 <!-- 上方绿色图片 -->
-    <image class="green_back_ground" src="http://www.binhub.top:8080/image?name=school_gate_02.jpg"
+    <image class="green_back_ground" src="/img/school_gate_02.jpg"
         ></image>
 <!-- 个人照片 -->
     <!-- <image src="http://www.binhub.top:8080/image?name=my_image.jpg"
@@ -28,7 +28,7 @@
 
 <!-- 下方图片 -->
 
-    <image src="http://www.binhub.top:8080/image?name=school_gate_03.jpg"
+    <image src="/img/school_gate_03.jpg"
     class="white_back_image"
     ></image>
 <!-- 核验地点 -->
@@ -38,7 +38,7 @@
   </view>
 <!-- ---------------------- 底部按钮 ---------------------- -->
 
-    <image src="http://www.binhub.top:8080/image?name=school_gate_04.jpg"
+    <image src="/img/school_gate_04.jpg"
     class="bottom_button" bindtap="returnMain"
     ></image>
 </view>

@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/school/index",
+    "pages/web/index",
     "pages/logs/logs"
     
   ],

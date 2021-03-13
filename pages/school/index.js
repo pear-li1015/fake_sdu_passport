@@ -98,19 +98,61 @@ Page({
       
       // 构建 map
       let map = {
+        '&nbsp;&nbsp;': {
+          name: '李彬',
+          code: '201845003',
+          image: '/img/my_image.jpg'
+        },
         '熊🐻': {
           name: '彬彬',
-          code: '20xxxxx3',
-          image: 'http://www.binhub.top:8080/image?name=abc.jpg'
+          code: '201845003',
+          image: 'http://www.binhub.top:8080/image?name=my_image.jpg'
         },
+        '呼哈哈': {
+          name: '王振东',
+          code: '201845007',
+          image: 'http://www.binhub.top:8080/image?name=school_gate_dongdong.jpg'
+        },
+        '小姚有点困': {
+          name: '姚惠珠',
+          code: '201845004',
+          image: 'http://www.binhub.top:8080/image?name=school_gate_yao_hui_zhu.jpg'
+        },
+
+        '攻城蜗牛': {
+          name: '盛振华',
+          code: '201845007',
+          image: 'http://www.binhub.top:8080/image?name=school_gate_sheng_zhen_hua.jpg'
+        },
+        'unknown': {
+          name: 'unknown',
+          code: '2sssssss7',
+          image: 'http://www.binhub.top:8080/image?name=hhh.jpg'
+        },
+        'Shsfo': {
+          name: '贾坤',
+          code: '2sssssss7',
+          image: 'http://www.binhub.top:8080/image?name=school_gate_dongdong.jpg'
+        },
+        'Dx.': {
+          name: '董雪',
+          code: '201845009',
+          image: 'http://www.binhub.top:8080/image?name=school_gate_dong_xue.jpg'
+        },
+        'LEE': {
+          name: '李振',
+          code: '201845009',
+          image: 'http://www.binhub.top:8080/image?name=school_gate_dongdong.jpg'
+        },
+        // school_gate_dong_xue.jpg
 
       }
       
       let info = map[userInfo.nickName.trim()];
-      if(info === null || info === undefined) {
-        info = map['熊🐻'];
-      }
       
+      if(info === null || info === undefined) {
+        info = map['unknown'];
+      }
       console.log("--------------info---------------")
       console.log(info)
       this.setData({
