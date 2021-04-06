@@ -56,16 +56,24 @@ Page({
       })
       callback(app.globalData.userInfo);
     } else if (this.data.canIUse){
+      console.log("can i use")
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-        callback(res.userInfo);
-      }
+      wx.getUserInfo({
+        success: res => {
+          console.log("getUserInfo", res)
+          this.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+          console.log("user info ready",)
+          if(callback) {
+            callback(res.userInfo);
+          }
+        }
+      });
     } else {
+      console.log("others")
       // 在没有 open-type=getUserInfo 版本的兼容处理
       wx.getUserInfo({
         success: res => {
@@ -95,9 +103,14 @@ Page({
     // 获取微信基本信息
 
     this.getUserInfo((userInfo) => {
-      
+      console.log("---userInfo---", userInfo);
       // 构建 map
       let map = {
+        '微信用户': {
+          name: '李彬',
+          code: '201845003',
+          image: '/img/my_image.jpg'
+        },
         '&nbsp;&nbsp;': {
           name: '李彬',
           code: '201845003',

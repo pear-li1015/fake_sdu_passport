@@ -5,28 +5,6 @@
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.background_image {
-  /* display: flex;
-  height: 100%; */
-  width:100%;
-  height:100vh;
-}
-
 
 .success_image {
   z-index: 1000;
@@ -38,10 +16,9 @@
   border-radius: 3rpx;
 }
 
-/* .page {
-  overflow:hidden; 
-  position:fixed;
-  background-image:url('http://www.binhub.top:8080/image?name=school_gate_index.jpg');
-  margin: 0px; 
-  background-size: 100% 100%;
-} */
+.msg_icon {
+  background-size: 100% 100%; 
+background-repeat: no-repeat;
+background-position: center;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAACqElEQVRYhbWWT0hUQRzHv77+YERWBws7RQapBWlJQgc7FASSfwoMPHTxEl69dfIWQVCdOnSV6CYRhlgKZWYdCilM6A9hXjeNBcnE3f102Hnx+jm7+9x9fmHYnfnNfD8z85s371UBiqljki5JapfUKOmApL2S0pJSkuYlTUkalfQ5liNQqnQB02xO00BnKe9iwaPA5CahVpPOZ1PwbiBdIThU2vnFgvcDGY9JFngODAAngRrXv8bVB1w86xmbcb5F4V0FwJNAi2/2ntKCP10Z5++FH2HjVmeAwZhQWwY9C0k7zgb4uAfcUyY4LJc9E3hm4R2ebSp3xb4dsOqIwl+a4GhC4LA8Nf4vQng9kIsEssDxhOFN/P8U5ID6wF2ZVZFLb0rSp7h3bkzNS5qI1KskdQaSzpmOTxIGhxox9fZAUoNpnNDW6LWpNwaSDpnGL6Z+RdKSpGVJvRW0W986mVOY9RyWxUj8ZwXtMoeOQNKfyGwCSdXFd69sbXP+oVYELJjV21dgD5ACloDeCtrrDWdBwJhp7PNsfRKlz3DGAklvzPZ0b9G2d5n6jIBmM6NVoC7hVdcBvw2nNQx+NIE7CcPvG/85Ii+WayY4myD4PBu/bvqBf0f/q8lHoGTUIOmR8ZuTNByFtJpBswmAL0iakVQbactIui5pPQo/ZQa+j/w/KOmwpJ0xofsk3ZY0Jmm/id1wE8rL5eWDyclZoBUYieQrBdwEzgA7TF63A23ALeAXft2z50HALmDddHxVwCDUGvANeOd+14r0zQFDFhzC20qAKtEicNEHxp320zHyuBoz36GWJQ1JapI0XrAX8KDIzCfIP6fVwFXgIfC9QN8fLt5HPpUl7wABd41JDnhMPh2FBu4m//Hf7H73xIH54LXAW2AFGAZOlGNUTvkLPcw9PRVzY1kAAAAASUVORK5CYII=);
+}

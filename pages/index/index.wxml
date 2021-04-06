@@ -1,19 +1,94 @@
 <!--index.wxml-->
 <view class="">
+  <view style="background-image: url('https://sdxyt.sdu.edu.cn/tp_jp/resource/image/mobile/home/bg/bg-01.png'); width: 100%; height: 500rpx;background-repeat:no-repeat; background-size: 100% 100%; margin-top: -50rpx;">
+    <!-- 显示消息数量 -->
+    <view style="width: 100%; height: 40rpx; padding-top: 100rpx;">
+      <view class="msg_icon" style="width: 35rpx; height: 35rpx; float: right; margin-right: 45rpx;">
+        <text style="float: right; margin-top: -15rpx; margin-right: -20rpx; font-size: 28rpx; width: 35rpx; height: 35rpx; text-align: center; background-color: #fff; border-radius: 50%; color: #a50001 !important;">2</text>
+      </view>
+    </view>
+    <!-- 显示日期时间 -->
+    <view style="margin-left: 30rpx; margin-top: 37rpx;">
+      <text style="font-size: 35rpx; color: #fff;">2021年3月27日12:32:10 星期六</text>
+    </view>
+    <!-- 显示卡片 -->
+    <view style="margin-left: 32rpx; margin-right:32rpx; margin-top: 30rpx;">
+      <image style="width: 100%; height: 380rpx; border-radius: 20rpx;" src="https://sdxyt.sdu.edu.cn/tp_jp/resource/image/mobile/home/ad/banner.png"></image>
+    </view>
+  </view>
+  <!-- 中间各个按钮 -->
+  <view style="">
+    <view style="width: 130rpx; margin-left: 32rpx; float: left;">
+      <view>
+        <image style="width: 60rpx; height: 60rpx; margin-top: 160rpx; margin-left: 36rpx;" src="https://sdxyt.sdu.edu.cn/tp_jp/resource/image/apps/apps-03.png"></image>
+      </view>
+      <view style="font-size: 30rpx; margin-left: 10rpx; margin-top: 5rpx; line-height: 1;" bindtap="locationScanCode">地点扫码</view>
+    </view>
+    <view style="width: 130rpx; margin-left: 10rpx; float: left;">
+      <view>
+        <image style="width: 60rpx; height: 60rpx; margin-top: 160rpx; margin-left: 40rpx;" src="https://sdxyt.sdu.edu.cn/tp_jp/resource/image/apps/apps-17.png"></image>
+      </view>
+      <view style="text-align: center;">
+        <view style="font-size: 30rpx; margin-top: 5rpx; line-height: 1;">出入校园信息填报</view>
+      </view>
+    </view>
+    <view style="width: 130rpx; margin-left: 10rpx; float: left;">
+      <view>
+        <image style="width: 60rpx; height: 60rpx; margin-top: 160rpx; margin-left: 36rpx;" src="https://sdxyt.sdu.edu.cn/tp_jp/resource/image/apps/apps-07.png"></image>
+      </view>
+      <view style="text-align: center;">
+        <view style="font-size: 30rpx; margin-top: 5rpx; line-height: 1;">校门二维码</view> 
+      </view>
+    </view>
+    <view style="width: 130rpx; margin-left: 10rpx; float: left;">
+      <view>
+        <image style="width: 60rpx; height: 60rpx; margin-top: 160rpx; margin-left: 36rpx;" src="https://sdxyt.sdu.edu.cn/tp_jp/resource/image/apps/apps-08.png"></image>
+      </view>
+      <view style="text-align: center;">
+        <view style="font-size: 30rpx; margin-top: 5rpx; line-height: 1;">空闲教室查询</view>
+      </view> 
+    </view>
+    <view style="width: 130rpx; margin-left: 10rpx; float: left;">
+      <view>
+        <image style="width: 60rpx; height: 60rpx; margin-top: 160rpx; margin-left: 36rpx;" src="https://sdxyt.sdu.edu.cn/tp_jp/resource/image/mobile/service/service_icon/service-icon-more.png"></image>
+      </view>
+      <view style="text-align: center;">
+        <view style="font-size: 30rpx; margin-top: 5rpx; line-height: 1;">更多</view> 
+      </view>
+    </view>
+  </view>
+  <!-- 底部fixed布局 -->
+  <view style="width: 100%; height: 110rpx; position: fixed; bottom: 0; background-color: #fff; border-top: 1px solid #eee; box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.05); display: flex; justify-content: space-around;">
+    <view style="width: 120rpx; height: 100rpx; text-align:center;">
+      <image style="width: 50rpx; height: 50rpx; margin-top: 10rpx;" src="/img/sys/home-active.png"></image>
+      <view style="background-color: rgba(165,0,1,0.15); padding: 1rpx; border-radius: 15rpx; height: 32rpx;">
+        <view style="font-size: 24rpx; color: #a50001;">首页</view>
+      </view>
+    </view>
+    <view style="width: 120rpx; height: 100rpx; text-align:center;">
+      <image style="width: 50rpx; height: 50rpx; margin-top: 10rpx;" src="/img/sys/content-positive.png"></image>
+      <view style="padding: 1rpx; border-radius: 15rpx; height: 32rpx;">
+        <view style="font-size: 24rpx; color: #333;">内容</view>
+      </view>
+    </view>
+    <view style="width: 120rpx; height: 100rpx; text-align:center;">
+      <image style="width: 50rpx; height: 50rpx; margin-top: 10rpx;" src="/img/sys/service-potisive.png"></image>
+      <view style="padding: 1rpx; border-radius: 15rpx; height: 32rpx;">
+        <view style="font-size: 24rpx; color: #333;">服务</view>
+      </view>
+    </view>
+    <view style="width: 120rpx; height: 100rpx; text-align:center;">
+      <image style="width: 50rpx; height: 50rpx; margin-top: 10rpx;" src="/img/sys/my-positive.png"></image>
+      <view style="padding: 1rpx; border-radius: 15rpx; height: 32rpx;">
+        <view style="font-size: 24rpx; color: #333;">我的</view>
+      </view>
+    </view>
+  </view>
 
-<!-- 
-    默认(获取定位权限->检查用户人脸信息)
-    预约(打开地图->选柜子->选格子->付钱->生成开柜码)
-    个人中心(人脸注册(要求用户上传一张照片->linux特征提取并返回结果)，未完成(开门，开门记录，结束使用)，已完成(开门记录),会员信息(使用情况))
-    其他(操作教程，联系我们，优惠办理)
-  -->
-    <image class="background_image" src="/img/school_gate_index.jpg" bindtap="openPassPort"></image>
   <view class="userinfo" wx:if="{{!hasUserInfo}}">
     <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
   </view>
-    <button bindtap="webPage"> webPage </button>
   
-    <image class="success_image" wx:if="{{imageDisplay}}" src="/img/school_gate_success.jpg"></image>
-  <!-- <view style="margin-top: 30rpx;" bindtap="openPassPort" >打开通行证</view> -->
+  <image class="success_image" wx:if="{{imageDisplay}}" src="/img/school_gate_success.jpg"></image>
 </view>
  

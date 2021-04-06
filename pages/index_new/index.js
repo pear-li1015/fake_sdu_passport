@@ -4,39 +4,40 @@ const app = getApp()
 
 Page({
   data: {
+    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imageDisplay: false,
+  },
+  //事件处理函数
+  bindViewTap: function() {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
   },
   openPassPort: function() {
     wx.navigateTo({
       url: '../school/index'
     })
   },
-  locationScanCode: function() {
-    let that = this;
-    wx.scanCode({
-      onlyFromCamera: false,
-      scanType: ['qrCode'],
-      success: function(res) {
-        // 返回值中包含rawData和result两个字段，
-        // 对rawData进行一次base64解码得到 result 中内容
-        // 对rawData进行两次base64解码可得到如下形式
-        // pid=60101070_3&timestamp=1590556690000
-        // 注测试扫码的是软件园校区餐厅70桌3号座位上的二维码
+  // lifetimes: {
 
-        console.log(res);
-        // 打开新页面
-        that.openPassPort();
-      },
-      fail: function(res) {
-
-        console.log(res);
-      }
-    })
-  },
-
+  //   ready: function () {
+  //     console.log("index ready.")
+  //     console.log("--imageDisplay--: " + this.imageDisplay)
+  //     if(this.imageDisplay) {
+  //       console.log("--imageDisplay--")
+  //       // setInterval
+  //       let that = this;
+  //       setTimeout((that) => {
+  //         that.setData({
+  //           imageDisplay: false,
+  //         })
+  //       }, 1000);
+  //     }
+  //   },
+  // },
   onShow: function () {
 
     console.log("index attached.")
@@ -60,6 +61,11 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  webPage: function() {
+    wx.navigateTo({
+      url: '../web/index',
     })
   },
 })

@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view>
+
+  <!-- 顶部红色大背景 -->
+  <view class="red_back">
+    <view class="msg_row row">
+      <view class="msg_icon">
+        <view class="msg_num">3
+        </view>
+      </view>
+    </view>
+    
+    <view class="time_row row">
+    </view>
+    
+    <view class="card_row row">
+    </view>
+    11111
+  </view>
+  <!-- 功能按钮 -->
+  <view class="mid_button">
+  </view>
+  <!-- 底部tab页 -->
+  <view class="bottom_button">
+  </view>
+</view>
+
+
